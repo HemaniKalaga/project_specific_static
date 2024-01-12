@@ -1,0 +1,24 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block title %}
+    <title>Document</title>
+    {% endblock %}
+    <link rel="stylesheet" href="{% static 'project_specific_static/css/css1.css' %}"
+</head>
+<body><center>
+    <h1> -------------Ziro Valley-------------</h1>
+
+    <img src="{% static 'images/ziro_valley1.jpg' %}" alt="Image not found" height="250px" width="300px">
+    <img src="{% static 'images/ziro_valley2.avif' %}" alt="Image not found" height="250px" width="300px">
+    {% block body_block %}
+
+    {% endblock %}
+</center>
+    
+
+</body>
+</html>
